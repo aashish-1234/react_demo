@@ -1,6 +1,11 @@
 import { useState } from "react";
 import Gello from "./components/Gello";
 import Fruits from "./components/Fruits";
+import Conditional_component from "./components/Conditional_component";
+import Ternary from "./components/Ternary";
+import Message from "./components/Message";
+import Counter from "./components/Counter";
+
 function App() {
   const person = {
     name: "aashish",
@@ -19,8 +24,13 @@ function App() {
   return (
     <>
       <Gello person={person}></Gello>
-      <Gello person={person2}></Gello><hr></hr>
-      <Fruits ></Fruits>
+      <Gello person={person2}></Gello>
+      <hr></hr>
+      <Fruits></Fruits>
+      <Conditional_component></Conditional_component>
+      <Ternary />
+      <Message />
+      <Counter />
     </>
   );
 }
